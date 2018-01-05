@@ -1,0 +1,19 @@
+<!DOCYTPE html>
+<html ng-app="contatooh">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charsert="UTF-8">
+        <title>Contatooh</title>
+        <link rel="stylesheet" href="css/index.min.css">
+    </head>
+    <body ng-controller="ContatosController" class="container">
+        <div class="text-right">
+            <p>Logado como: <span id="usuario-logado"><%=usuarioLogado%></span></p>
+            <a href="/logout">Logout</a>
+        </div>
+
+        <div ng-view></div>
+
+        <script src="js/index.min.js"></script>
+    </body>
+</html>
